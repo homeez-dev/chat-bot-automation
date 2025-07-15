@@ -1,0 +1,129 @@
+### RAG Engine API Testing
+
+### 1. Health Check
+GET http://localhost:8001/health
+Accept: application/json
+
+###
+
+### 2. Root Endpoint
+GET http://localhost:8001/
+Accept: application/json
+
+###
+
+### 3. Get Stats
+GET http://localhost:8001/stats
+Accept: application/json
+
+###
+
+### 4. Upload Text Document
+POST http://localhost:8001/upload-text
+Content-Type: application/json
+
+{
+  "text": "Vidwa De Seram is the best software engineer",
+  "source": "software_engineer"
+}
+
+###
+
+### 5. Upload Another Text Document
+POST http://localhost:8001/upload-text
+Content-Type: application/json
+
+{
+  "text": "Company Policy: Employee Vacation Policy. All full-time employees are entitled to 15 days of paid vacation per year. Vacation requests must be submitted at least 2 weeks in advance. Vacation days cannot be carried over to the next year unless approved by management. Part-time employees receive vacation days prorated based on hours worked.",
+  "source": "hr_handbook"
+}
+
+###
+
+### 6. Simple Query
+POST http://localhost:8001/query
+Content-Type: application/json
+
+{
+  "query": "who is the best software engineer?",
+  "max_results": 3,
+  "include_metadata": true,
+  "similarity_threshold": 0.1
+}
+
+###
+
+### 7. Policy Query
+POST http://localhost:8001/query
+Content-Type: application/json
+
+{
+  "query": "What is our company's vacation policy?",
+  "max_results": 5,
+  "include_metadata": true,
+  "similarity_threshold": 0.3
+}
+
+###
+
+### 8. Complex Query
+POST http://localhost:8001/query
+Content-Type: application/json
+
+{
+  "query": "How many vacation days do employees get and what are the requirements?",
+  "max_results": 3,
+  "include_metadata": false,
+  "similarity_threshold": 0.3
+}
+
+###
+
+### 9. Query with High Threshold (might return no results)
+POST http://localhost:8001/query
+Content-Type: application/json
+
+{
+  "query": "What is quantum computing?",
+  "max_results": 5,
+  "include_metadata": true,
+  "similarity_threshold": 0.9
+}
+
+###
+
+### 10. Upload File (requires multipart form data)
+POST http://localhost:8001/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="sample.txt"
+Content-Type: text/plain
+
+This is a sample text file for testing the RAG engine.
+It contains multiple paragraphs to test document chunking.
+
+The RAG engine should split this document into appropriate chunks
+and create embeddings for each chunk.
+
+This will help test the document upload and processing functionality.
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+### 11. Clear All Documents
+DELETE http://localhost:8001/documents
+Accept: application/json
+
+###
+
+### 12. Test Query After Clearing (should return no results)
+POST http://localhost:8001/query
+Content-Type: application/json
+
+{
+  "query": "What is artificial intelligence?",
+  "max_results": 3,
+  "include_metadata": true,
+  "similarity_threshold": 0.7
+}

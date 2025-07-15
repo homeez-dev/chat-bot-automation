@@ -1,0 +1,15 @@
+### Debug Search - Check what's in the database
+GET http://localhost:8001/debug/search?query=artificial%20intelligence&threshold=0.0
+Accept: application/json
+
+###
+
+### Debug Search - Check with simple query
+GET http://localhost:8001/debug/search?query=AI&threshold=0.0
+Accept: application/json
+
+###
+
+### Debug Search - Check all documents
+GET http://localhost:8001/debug/search?query=test&threshold=0.0
+Accept: application/json

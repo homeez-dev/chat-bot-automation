@@ -1,0 +1,263 @@
+[32mINFO[0m:     [15-07-2025 11:20:07] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [15-07-2025 11:20:08] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component System
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component SqliteDB
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component Posthog
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Starting component SegmentAPI
+[31mERROR[0m:    [15-07-2025 11:20:08] Failed to send telemetry event ServerStartEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:20:08] Started server process [[36m33142[0m]
+[32mINFO[0m:     [15-07-2025 11:20:08] Waiting for application startup.
+[32mINFO[0m:     [15-07-2025 11:20:08] Application startup complete.
+[31mERROR[0m:    [15-07-2025 11:20:08] [Errno 48] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+[32mINFO[0m:     [15-07-2025 11:20:08] Waiting for application shutdown.
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component System
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component SegmentAPI
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component Posthog
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component SqliteDB
+[36mDEBUG[0m:    [15-07-2025 11:20:08] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [15-07-2025 11:20:08] Application shutdown complete.
+[32mINFO[0m:     [15-07-2025 11:20:40] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [15-07-2025 11:20:40] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component System
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component SqliteDB
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component Posthog
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [15-07-2025 11:20:40] Starting component SegmentAPI
+[31mERROR[0m:    [15-07-2025 11:20:40] Failed to send telemetry event ServerStartEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:20:40] Started server process [[36m33913[0m]
+[32mINFO[0m:     [15-07-2025 11:20:40] Waiting for application startup.
+[32mINFO[0m:     [15-07-2025 11:20:40] Application startup complete.
+[32mINFO[0m:     [15-07-2025 11:20:40] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [15-07-2025 11:26:39] ::1:63275 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:26:39] ::1:63275 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:26:39] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:26:39] ::1:63276 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:27:09] ::1:63319 - "GET /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/count HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:27:48] Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+[36mDEBUG[0m:    [15-07-2025 11:27:48] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [15-07-2025 11:27:48] ::1:63363 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:28:55] ::1:63441 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:29:03] ::1:63455 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:29:29] ::1:63487 - "GET /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/count HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:30:08] ::1:63574 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:30:08] ::1:63574 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:30:08] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:30:08] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:30:08] ::1:63575 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:30:14] ::1:63592 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:30:14] ::1:63592 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:30:14] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:30:14] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:30:14] ::1:63593 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:31:11] ::1:63678 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:31:11] ::1:63678 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:31:11] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:31:11] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:31:11] ::1:63679 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:31:21] ::1:63693 - "GET /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/count HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:11] ::1:63773 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:11] ::1:63773 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:32:11] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:32:11] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:32:11] ::1:63774 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:20] ::1:63792 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:20] ::1:63792 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:32:20] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:32:20] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:32:20] ::1:63793 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:26] ::1:63809 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:26] ::1:63809 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:32:26] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:32:26] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:32:26] ::1:63810 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:30] ::1:63824 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:30] ::1:63824 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:32:30] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:32:30] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:32:30] ::1:63825 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:32:59] ::1:63880 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:32:59] Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:32:59] ::1:63880 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[33mWARNING[0m:  [15-07-2025 11:33:09] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:33:09] ::1:63894 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:33:20] ::1:63909 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:33:26] ::1:63919 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:33:33] ::1:63930 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:33:40] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [15-07-2025 11:33:40] ::1:63941 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:33:49] ::1:63953 - "GET /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/count HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:34:05] ::1:63974 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:34:18] ::1:63996 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:34:44] ::1:64056 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:34:44] ::1:64056 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:34:44] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:34:44] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:34:44] ::1:64057 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:35:14] ::1:64124 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:35:14] ::1:64124 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:35:14] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:35:14] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:35:14] ::1:64125 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:26] ::1:64206 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:40] ::1:64224 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:40] ::1:64224 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:36:40] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:36:40] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:36:40] ::1:64225 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:48] ::1:64236 - "GET /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/count HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:53] ::1:64236 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:36:53] ::1:64236 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:37:00] ::1:64256 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:37:16] ::1:64278 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:37:32] ::1:64301 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:37:37] ::1:64301 - "POST /api/v1/collections/d1a5f943-35c2-4e74-81a5-3ae89fe32cea/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:37:56] ::1:64331 - "DELETE /api/v1/collections/rag_documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:37:56] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:37:56] ::1:64331 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:38:03] Starting component PersistentLocalHnswSegment
+[31mERROR[0m:    [15-07-2025 11:38:03] Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:38:03] ::1:64342 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/add HTTP/1.1" 201
+[31mERROR[0m:    [15-07-2025 11:38:07] Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+[33mWARNING[0m:  [15-07-2025 11:38:07] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:38:07] ::1:64342 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:38:42] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:38:42] ::1:64388 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:38:49] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:38:49] ::1:64400 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:39:14] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:39:14] ::1:64431 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:39:22] ::1:64444 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/add HTTP/1.1" 201
+[33mWARNING[0m:  [15-07-2025 11:39:32] Number of requested results 3 is greater than number of elements in index 2, updating n_results = 2
+[32mINFO[0m:     [15-07-2025 11:39:32] ::1:64458 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:39:42] Number of requested results 5 is greater than number of elements in index 2, updating n_results = 2
+[32mINFO[0m:     [15-07-2025 11:39:42] ::1:64472 - "POST /api/v1/collections/5238392a-57ae-4f33-b7c4-0c206478ce0e/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:39:56] ::1:64490 - "DELETE /api/v1/collections/rag_documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:39:56] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:39:56] ::1:64490 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:40:07] Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+[36mDEBUG[0m:    [15-07-2025 11:40:07] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [15-07-2025 11:40:07] ::1:64505 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:40:15] Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:40:15] ::1:64518 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/add HTTP/1.1" 201
+[33mWARNING[0m:  [15-07-2025 11:40:20] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:40:20] ::1:64518 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:40:34] Number of requested results 5 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:40:34] ::1:64544 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:41:48] ::1:64655 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:41:48] ::1:64655 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:41:48] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:41:48] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:41:48] ::1:64656 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:41:59] ::1:64679 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:41:59] ::1:64679 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:41:59] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:41:59] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:41:59] ::1:64680 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:42:20] ::1:64708 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:42:20] ::1:64708 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:42:20] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:42:20] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:42:20] ::1:64709 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:42:32] ::1:64725 - "GET /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/count HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:42:38] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:42:38] ::1:64738 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:42:45] ::1:64749 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:42:45] ::1:64749 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:42:48] ::1:64749 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:42:54] ::1:64763 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:43:01] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [15-07-2025 11:43:01] ::1:64773 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:43:16] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [15-07-2025 11:43:16] ::1:64795 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:43:26] ::1:64808 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:43:34] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [15-07-2025 11:43:34] ::1:64824 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:43:43] ::1:64837 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:44:46] ::1:64933 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:44:46] ::1:64933 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:44:46] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:44:46] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:44:46] ::1:64934 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:45:14] ::1:64968 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:45:14] ::1:64968 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:45:14] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:45:14] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:45:14] ::1:64969 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:45:22] Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:45:22] ::1:64981 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/get HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:45:49] Number of requested results 10 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [15-07-2025 11:45:49] ::1:65032 - "POST /api/v1/collections/b1c35bee-280d-482c-b200-11808563dfe9/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:02] ::1:65062 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:02] ::1:65062 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:46:02] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:46:02] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:02] ::1:65063 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:08] ::1:65079 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:08] ::1:65079 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:46:08] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:46:08] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:08] ::1:65080 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:23] ::1:65106 - "DELETE /api/v1/collections/rag_documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:46:24] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:24] ::1:65106 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:33] ::1:65131 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:33] ::1:65131 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:46:33] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:46:33] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:33] ::1:65133 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:49] ::1:65152 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:49] ::1:65152 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:46:49] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:46:49] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:49] ::1:65153 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:46:59] ::1:65168 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:46:59] Starting component PersistentLocalHnswSegment
+[31mERROR[0m:    [15-07-2025 11:46:59] Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:46:59] ::1:65168 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[31mERROR[0m:    [15-07-2025 11:47:06] Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+[33mWARNING[0m:  [15-07-2025 11:47:06] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:47:06] ::1:65179 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:47:15] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:47:15] ::1:65194 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:47:31] Number of requested results 3 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:47:31] ::1:65216 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:47:54] Number of requested results 5 is greater than number of elements in index 1, updating n_results = 1
+[32mINFO[0m:     [15-07-2025 11:47:54] ::1:65242 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[31mERROR[0m:    [15-07-2025 11:48:08] Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:48:08] ::1:65258 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/get HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:48:23] ::1:65278 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[33mWARNING[0m:  [15-07-2025 11:48:28] Number of requested results 5 is greater than number of elements in index 2, updating n_results = 2
+[32mINFO[0m:     [15-07-2025 11:48:28] ::1:65278 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:49:35] Number of requested results 3 is greater than number of elements in index 2, updating n_results = 2
+[32mINFO[0m:     [15-07-2025 11:49:35] ::1:65366 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:49:53] Number of requested results 3 is greater than number of elements in index 2, updating n_results = 2
+[32mINFO[0m:     [15-07-2025 11:49:53] ::1:65388 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:49:56] ::1:65388 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/get HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:50:06] ::1:65407 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:50:08] ::1:65407 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/get HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:50:12] ::1:65407 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:50:47] ::1:65472 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:50:51] ::1:65472 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:50:55] ::1:65472 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:51:00] ::1:65472 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[33mWARNING[0m:  [15-07-2025 11:51:46] Number of requested results 10 is greater than number of elements in index 5, updating n_results = 5
+[32mINFO[0m:     [15-07-2025 11:51:46] ::1:49179 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:51:56] ::1:49206 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:51:56] ::1:49206 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [15-07-2025 11:51:56] Collection rag_documents already exists, returning existing collection.
+[31mERROR[0m:    [15-07-2025 11:51:56] Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+[32mINFO[0m:     [15-07-2025 11:51:56] ::1:49207 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:52:17] ::1:49241 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:53:11] ::1:49309 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:53:25] ::1:49326 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:53:35] ::1:49342 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:53:35] ::1:49342 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/add HTTP/1.1" 201
+[32mINFO[0m:     [15-07-2025 11:53:42] ::1:49353 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
+[32mINFO[0m:     [15-07-2025 11:53:54] ::1:49372 - "POST /api/v1/collections/833a5532-057b-4360-9931-a17b38ff215a/query HTTP/1.1" 200
